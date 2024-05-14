@@ -1,0 +1,16 @@
+# creating server 
+
+we will create server using expressJS
+- we can also do the same using nodejs but might be lenthy.
+
+steps :
+
+- npm init -y (creates package.json without express dependencies )
+- go to express.npm 
+- copy npm i express , install it in server folder 
+(now express dependencies added to json )
+
+- create root file = server.js 
+
+- write server code 
+- run it 
