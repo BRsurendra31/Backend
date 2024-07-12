@@ -1,0 +1,12 @@
+# nodemon :
+
+Nodemon is a utility that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected. 
+
+steps :
+
+-npm init - for setup module and it give you package.json file 
+-npm i express - can see it reflects in package.json file with its version 
+-run code without nodemon installation
+- run code after npm i nodemon, just give a singe command "nodemon" in terminal it will run all chnages automatically without giving "node index.js" command to start server again and again ...
+
+

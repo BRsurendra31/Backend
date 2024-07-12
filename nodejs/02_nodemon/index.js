@@ -1,0 +1,1 @@
+console.log("yes"); // when we replace "hello" by "hii" , it automatically executed on runtime , without giving comand to execute

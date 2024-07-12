@@ -1,0 +1,4 @@
+# There are 2 type node module 
+
+1. Built in Module - we only use 
+2. Local Module -  we create and use 
