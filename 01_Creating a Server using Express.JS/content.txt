@@ -5,8 +5,9 @@ we will create server using expressJS
 
 steps :
 
+-go to Creating a Server using Express.JS folder
 - npm init -y (creates package.json without express dependencies )
-- go to express.npm 
+- go to express.npm on google
 - copy npm i express , install it in server folder 
 (now express dependencies added to json )
 
