@@ -1,0 +1,93 @@
+express 
+Express: Express is a web application framework for Node.js. It provides a robust set of features to develop web and mobile applications. It is often used to build single-page, multi-page, and hybrid web applications. Express allows developers to set up middleware to respond to HTTP requests, define routes, and render HTML views based on data.
+app
+app: In the context of Express, app is an instance of the Express application. This instance is used to set up your web server, define routes, and handle HTTP requests and responses. Essentially, app serves as the main object in your Express application, through which you configure the server and define the behavior of your web application.
+
+Importing Express:
+
+const express = require('express');
+
+This line imports the Express module into your application. The require('express') function returns the Express module, which is then assigned to the variable express.
+
+Creating an Express Application
+
+const app = express();
+
+This line creates an instance of an Express application by calling the express function. This app instance is used to configure and start your web server, define routes, and set up middleware.
+
+In summary, express is the framework you are using to build your web application, and app is the instance of your web application created using Express.
+
+
+
+// Some Errors 
+
+nodemon : File C:\Users\acer\AppDa
+ta\Roaming\npm\nodemon.ps1 cannot  
+be loaded because running scripts  
+is disabled on this system. For    
+more information, see
+about_Execution_Policies at https: 
+/go.microsoft.com/fwlink/?LinkID=1 
+35170.
+At line:1 char:1
+rit
+  yException
+    + FullyQualifiedErrorId : Una
+   uthorizedAccess
+PS C:\Users\acer\Development\Backend\2_ExpressJS\creatingServer> node server.js
+app is listening at port 3000...
+PS C:\Users\acer\Development\Backend\2_ExpressJS\creatingServer> nodemon
+nodemon : File C:\Users\acer\AppData\Roaming\npm\nodemon.ps1 
+cannot be loaded because running scripts is disabled on this 
+system. For more information, see about_Execution_Policies at     
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ nodemon
++ ~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityE  
+   xception
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
+
+why this is showing although i have installed nodemon and its clearly showing in package,json 
+
+
+ans :
+
+The error you are encountering is due to the PowerShell execution policy settings on your system. By default, PowerShell restricts script execution to prevent the running of potentially malicious scripts. This can interfere with tools like nodemon that rely on PowerShell scripts.
+
+
+Step 1: Change the PowerShell Execution Policy
+You need to change the execution policy to allow running scripts. Open PowerShell as an administrator and run the following command:
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+This command sets the execution policy for the current user to RemoteSigned, which allows running scripts created on your local machine and requires a digital signature for scripts downloaded from the internet.
+
+Step 2: Verify the Change
+You can verify that the execution policy has been changed by running:
+
+Get-ExecutionPolicy -List
+
+This should show the RemoteSigned policy for the CurrentUser scope.
+
+Step 3: Run nodemon
+Now, you should be able to run nodemon without encountering the security error. Try running:
+
+nodemon
