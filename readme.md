@@ -281,13 +281,12 @@ mongod
 ```bash
 node index.js
 ```
-**Step 5: Test the API**
+**Step 5: Test the API** <br>
 You can use tools like Postman or cURL to interact with the API:
 
 - Create a new user (POST '/users')
 ```json
 POST /users
-Content-Type: application/json
 {
   "username": "john_doe",
   "password": "securePassword123"
@@ -304,7 +303,7 @@ GET /users/60e71f47bc8fa92f342ab12b
 - Update a user by ID (PATCH '/users/:id')
 ```json
 PATCH /users/60e71f47bc8fa92f342ab12b
-Content-Type: application/json
+
 {
   "password": "newSecurePassword456"
 }
