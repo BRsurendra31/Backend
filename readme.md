@@ -16,13 +16,13 @@ different web APIs are :
 
 - **RESTful APIs:** These are the most popular type of web APIs. They follow the principles of REST (Representational State Transfer), which emphasizes stateless communication, where each request from a client to the server must contain all the information needed to understand and process the request.
 
-    **Characteristics :**
+    **Characteristics :**<br>
     - Statelessness: Each request from a client to the server must contain all the information needed to understand and process the request. The server does not store the state of the client session.
     - Uniform Interface: RESTful APIs use a uniform interface, often based on HTTP methods like GET, POST, PUT, DELETE, etc.
     - Resource-Based: Everything in REST is considered a resource. Resources are identified by URLs, and each URL represents a unique resource.
     - Representation: Resources can have multiple representations, such as JSON, XML, HTML, etc. Most RESTful APIs use JSON due to its simplicity and readability.
 
-    **Example :**
+    **Example :** <br>
     Here’s an example of a simple RESTful API for managing a collection of books in a library.
 
     ```js
@@ -84,14 +84,14 @@ different web APIs are :
     app.listen(port, () => console.log(`Listening on port ${port}...`));
     ```
 
-- **Third-Party API:**
-This is an API created and provided by an external service or platform, not developed by you or your team. These APIs allow you to integrate external services, data, or functionalities into your own application.
+- **Third-Party API:** <br>
+This is an API created and provided by an external service or platform, not developed by you or your team. These APIs allow you to integrate external services, data, or functionalities into your own application. <br>
 Examples of Third-Party APIs:
 - Social Media APIs: APIs from platforms like Facebook, Twitter, or Instagram allow you to integrate social media features, such as fetching user profiles, posting updates, or displaying social feeds.
 - Payment APIs: Services like Stripe, PayPal, or Square offer APIs to integrate payment processing into your application. You can use these APIs to handle payments, subscriptions, or refunds without building your own payment system.
 - Mapping and Geolocation APIs: Google Maps API or Mapbox API can be used to embed maps, get geolocation data, or calculate distances in your application.
 - Weather APIs: APIs like OpenWeatherMap or WeatherAPI.com provide weather data that you can use to display current conditions, forecasts, or weather alerts in your app.
-- E-commerce APIs: Platforms like Shopify or Amazon provide APIs that allow you to manage products, orders, and customer data, making it easier to build e-commerce features into your app.
+- E-commerce APIs: Platforms like Shopify or Amazon provide APIs that allow you to manage products, orders, and customer data, making it easier to build e-commerce features into your app. <br>
     **How to use Third party APIs** :
     1. Sign Up and Obtain API Credentials: Most third-party APIs require you to create an account and obtain an API key or client ID/secret. This key is used to authenticate your requests.
     2. Understand the API Documentation: The API provider usually provides comprehensive documentation that explains the available endpoints, request/response formats, rate limits, and error handling.
@@ -99,7 +99,7 @@ Examples of Third-Party APIs:
     4. Process the Response: The API will return a response, usually in JSON or XML format. You parse this response and use the data within your application, such as displaying it on the UI or storing it in your database.
     5. Handle Errors and Rate Limits: It's important to handle errors gracefully, such as when an API request fails due to a network issue or an invalid API key. Also, respect rate limits to avoid being blocked by the API provider.
 
-    **Example :**
+    **Example :** <br>
     If you want to fetch weather data from the OpenWeatherMap API, you might do something like this:
     ```javascript
     const axios = require('axios');
@@ -120,11 +120,11 @@ Examples of Third-Party APIs:
 - **SOAP APIs:** Simple Object Access Protocol (SOAP) APIs use XML-based messaging and are known for their strong standards and security features. SOAP is more rigid and complex compared to REST.
 - **GraphQL:** A more flexible alternative to REST, GraphQL allows clients to request only the data they need, rather than a fixed structure. This minimizes data transfer and can be more efficient for certain use cases.
 
-### 2.Operating system APIs :
+### 2.Operating system APIs : <br>
 These APIs allow applications to interact with the underlying operating system. For example, Windows provides a set of APIs that allow software to interact with the file system, hardware devices, or manage memory.
-### 3.Library or Framework APIs :
+### 3.Library or Framework APIs : <br>
 These APIs are provided by libraries or frameworks, allowing developers to use pre-built functions or components. For instance, the React library provides APIs for managing the state and rendering UI components.
-### 4.Database APIs :
+### 4.Database APIs : <br>
 These APIs allow applications to interact with databases. SQL queries can be considered a type of API that allows you to interact with a relational database.
 
 ### How APIs Work :
