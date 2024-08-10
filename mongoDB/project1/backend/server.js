@@ -27,6 +27,8 @@ app.post('/register', async(req, res)=>{
         res.status(500).json({error :'Registration fail..'});
     }
 })
+
+
 connectDB();
 app.listen(port, ()=>{
 
