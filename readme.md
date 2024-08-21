@@ -86,18 +86,18 @@ different web APIs are :
 
 - **Third-Party API:** <br>
 This is an API created and provided by an external service or platform, not developed by you or your team. These APIs allow you to integrate external services, data, or functionalities into your own application. <br>
-Examples of Third-Party APIs:
-- Social Media APIs: APIs from platforms like Facebook, Twitter, or Instagram allow you to integrate social media features, such as fetching user profiles, posting updates, or displaying social feeds.
-- Payment APIs: Services like Stripe, PayPal, or Square offer APIs to integrate payment processing into your application. You can use these APIs to handle payments, subscriptions, or refunds without building your own payment system.
-- Mapping and Geolocation APIs: Google Maps API or Mapbox API can be used to embed maps, get geolocation data, or calculate distances in your application.
-- Weather APIs: APIs like OpenWeatherMap or WeatherAPI.com provide weather data that you can use to display current conditions, forecasts, or weather alerts in your app.
-- E-commerce APIs: Platforms like Shopify or Amazon provide APIs that allow you to manage products, orders, and customer data, making it easier to build e-commerce features into your app. <br>
-    **How to use Third party APIs** :
-    1. Sign Up and Obtain API Credentials: Most third-party APIs require you to create an account and obtain an API key or client ID/secret. This key is used to authenticate your requests.
-    2. Understand the API Documentation: The API provider usually provides comprehensive documentation that explains the available endpoints, request/response formats, rate limits, and error handling.
-    3. Make API Requests: Using your API key, you make HTTP requests to the API's endpoints to fetch or send data. Typically, you'll use HTTP methods like GET, POST, PUT, and DELETE.
-    4. Process the Response: The API will return a response, usually in JSON or XML format. You parse this response and use the data within your application, such as displaying it on the UI or storing it in your database.
-    5. Handle Errors and Rate Limits: It's important to handle errors gracefully, such as when an API request fails due to a network issue or an invalid API key. Also, respect rate limits to avoid being blocked by the API provider.
+      Examples of Third-Party APIs:
+      - Social Media APIs: APIs from platforms like Facebook, Twitter, or Instagram allow you to integrate social media features, such as fetching user profiles, posting updates, or displaying social feeds.
+      - Payment APIs: Services like Stripe, PayPal, or Square offer APIs to integrate payment processing into your application. You can use these APIs to handle payments, subscriptions, or refunds without building your own payment system.
+      - Mapping and Geolocation APIs: Google Maps API or Mapbox API can be used to embed maps, get geolocation data, or calculate distances in your application.
+      - Weather APIs: APIs like OpenWeatherMap or WeatherAPI.com provide weather data that you can use to display current conditions, forecasts, or weather alerts in your app.
+      - E-commerce APIs: Platforms like Shopify or Amazon provide APIs that allow you to manage products, orders, and customer data, making it easier to build e-commerce features into your app. <br>
+          **How to use Third party APIs** :
+             1. Sign Up and Obtain API Credentials: Most third-party APIs require you to create an account and obtain an API key or client ID/secret. This key is used to authenticate your requests.
+             2. Understand the API Documentation: The API provider usually provides comprehensive documentation that explains the available endpoints, request/response formats, rate limits, and error handling.
+             3. Make API Requests: Using your API key, you make HTTP requests to the API's endpoints to fetch or send data. Typically, you'll use HTTP methods like GET, POST, PUT, and DELETE.
+             4. Process the Response: The API will return a response, usually in JSON or XML format. You parse this response and use the data within your application, such as displaying it on the UI or storing it in your database.
+             5. Handle Errors and Rate Limits: It's important to handle errors gracefully, such as when an API request fails due to a network issue or an invalid API key. Also, respect rate limits to avoid being blocked by the API provider.
 
     **Example :** <br>
     If you want to fetch weather data from the OpenWeatherMap API, you might do something like this:
